@@ -1,0 +1,26 @@
+<div *ngIf="mission">
+  <h1>SpaceX Mission Details</h1>
+
+  <div class="container">
+    <img src="{{ mission.links.mission_patch_small }}" />
+
+    <div>
+      <div>
+        <h1>Mission</h1>
+        <strong>Name:</strong> {{ mission.mission_name }}
+        <br />
+        <strong>Year:</strong> {{ mission.launch_year }}
+        <br />
+        <h2>Rocket</h2>
+        <strong>Name:</strong> {{ mission.rocket.rocket_name }}
+        <br />
+        <strong>Type:</strong> {{ mission.rocket.rocket_type }}
+        <h2>Launch Site</h2>
+        {{ mission.launch_site.site_name_long }}
+      </div>
+      <h2>Launch Details</h2>
+      <p>{{ mission.details }}</p>
+      
+    </div>
+  </div>
+</div>

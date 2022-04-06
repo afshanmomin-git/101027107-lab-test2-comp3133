@@ -1,0 +1,46 @@
+.image {
+    max-height: 75px;
+    object-fit: contain;
+  }
+  
+  ul li {
+    list-style: url("../../assets/rocket-ship-svgrepo-com2.svg");
+    margin: 50px;
+  }
+  h1 {
+    padding-top: 2%;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+  }
+  li::marker {
+    font-size: 5em;
+    font-weight: bolder;
+  }
+  
+  .box {
+    background-color: #6fa899;
+    cursor: pointer;
+    border-radius: 20 px;
+    border: 2px solid black;
+    height: 100%;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .title {
+    float: left;
+    margin-left: 10px;
+  }
+  .title p,
+  .title h2 {
+    margin: 5px;
+  }
+  .description {
+    clear: both;
+    margin: 10px;
+    padding-top: 10px;
+  }
+  
